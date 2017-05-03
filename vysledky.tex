@@ -1,1 +1,124 @@
 \section*{Výsledky měření}
+Jako tenkou čočku jsme použili čočku označenou číslicí 5.
+Změřili jsme polohu čočky a velikost obrazu pro 5 různých hodnot $D$. Změřené hodnoty jsou v tabulce \ref{t:oh}. Velikost předmětu byla $Y=\SI{10}{\mm}$. $f_B$ značíme ohniskovou vzdálenost vypočtenou z \eqref{e:bessel} Besselovou metodou.
+Standardní odchylku určení polohy čočky, ve které byl obraz ostrý, odhadujeme na \SI{2}{\mm}. Standardní odchylku určení velikosti obrazu odhadujeme na \SI{0.3}{\mm}.
+
+Hodnoty $f_B$ se příliš neliší, takže z nich určíme střední hodnotu a standardní odchylku, ve které zohledníme chyby přímo měřených veličin
+\begin{equation*}
+f_B=\SI{10.82(10)}{\cm}
+\end{equation*}
+
+Z hodnot v tabulce \ref{t:oh} jsme spočítali z \eqref{e:dvojizvetseni} ohniskovou vzdálenost $f_a$ resp. $f_{\apr}$ metodou dvojího zvětšení pro variaci předmětové resp. obrazové vzdálenosti. Vzorec \eqref{e:dvojizvetseni} je citlivý na blízké hodnoty argumentů $a$, $\apr$ nebo $\beta$. Proto jsme vybrali jen několik měření, ve kterých se příslušné argumenty dostatečně liší. Vybraná měření jsou uvedeny v tabulce \ref{t:dvoji}. Výsledné hodnoty jsou
+\begin{equation*}
+f_{a} = \SI{10.2(10)}{\cm} \qquad \qquad f_{\apr}=\SI{10.4(1)}{\cm} \,.
+\end{equation*}
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{cc|cccc|c}
+$D$ (\si{\cm}) & $\Delta$ (\si{\cm}) & $a$ (\si{\cm}) & $\apr$ (\si{\cm}) & $\Ypr$ (\si{\mm}) & $ \beta$ & $f_B$ (\si{\cm}) \\ \hline \hline
+\multirow{2}{*}{54,0} & 24,1 & 38,5 & 15,5 & 3,7 & 0,37 & 10,81 \\ 
+ &  & 14,4 & 39,6 & 26,5 & 2,65 &  \\ \hline
+\multirow{2}{*}{114,0} & \multirow{2}{*}{89,3} & 11,7 & 102,3 & 87,3 & 8,73 & \multirow{2}{*}{10,81} \\ 
+ &  & 101,0 & 13,0 & 1,2 & 0,12 &  \\ \hline
+\multirow{2}{*}{94,0} & \multirow{2}{*}{68,9} & 12,0 & 82,0 & 66,8 & 6,68 & \multirow{2}{*}{10,87} \\ 
+ &  & 80,9 & 13,1 & 1,7 & 0,17 &  \\ \hline
+\multirow{2}{*}{79,0} & \multirow{2}{*}{53,1} & 65,5 & 13,5 & 2,0 & 0,20 & \multirow{2}{*}{10,83} \\ 
+ &  & 12,4 & 66,6 & 53,4 & 5,34 &  \\ \hline
+\multirow{2}{*}{64,0} & \multirow{2}{*}{36,7} & 49,8 & 14,2 & 2,6 & 0,26 & \multirow{2}{*}{10,74} \\ 
+ &  & 13,1 & 50,9 & 37,7 & 3,77 &  \\ \hline
+\multirow{2}{*}{46,0} & \multirow{2}{*}{12,3} & 16,2 & 29,8 & 26,7 & 2,67 & \multirow{2}{*}{10,68} \\ 
+ &  & 28,5 & 17,5 & 5,6 & 0,56 &  \\ 
+\end{tabular}
+\caption{Měření ohniskové vzdálenosti Besselovou metodou}
+\label{t:oh}
+\end{tabulka}
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{cc|cc|cc|cc}
+$a_1$ (\si{\cm}) & $a_2$ (\si{\cm}) & $\apr_1$ (\si{\cm}) & $\apr_2$ (\si{\cm}) & $\beta_1$ & $\beta_2$ & $f_{a}$ (\si{\cm}) & $f_{\apr}$ (\si{\cm}) \\ \hline
+11,7 & 28,5 & 102,3 & 17,5 & 8,73 & 0,56 & \num{10,0(8)} & \num{10,38(1)} \\ 
+11,7 & 12,4 & 102,3 & 66,6 & 8,73 & 5,34 & \num{9,6(30)} & \num{10,53(3)} \\ 
+101,0 & 12,4 & 13,0 & 66,6 & 0,12 & 5,34 & \num{10,9(30)} & \num{10,27(2)} \\ 
+12,4 & 49,8 & 66,6 & 14,2 & 5,34 & 0,26 & \num{10,2(14)} & \num{10,31(2)} \\ 
+28,5 & 12,0 & 17,5 & 82,0 & 0,56 & 6,68 & \num{10,1(8)} & \num{10,54(1)} \\ 
+38,5 & 12,0 & 15,5 & 82,0 & 0,37 & 6,68 & \num{10,4(10)} & \num{10,54(1)} \\ 
+\end{tabular}
+\caption{Měření ohniskové vzdálenosti metodou dvojího zvětšení}
+\label{t:dvoji}
+\end{tabulka}
+
+
+
+
+
+
+Pro měření kulové vady jsme použili sadu mezikružných clon. Jako vzdálenost paprsku od optické osy $s$ považujeme podle zadání aritmetický průměr největšího a nejmenšího poloměru.
+Změřené hodnoty jsou v tabulce \ref{t:kulvada} a zaneseny do grafu \ref{g:vada}.
+
+
+Závislost $v(s)$ jsme nafitovali funkcí tvaru \eqref{t:kulvada} a dostali hodnoty
+\begin{equation} \label{e:vysledky}
+\begin{array}{rclrcl}
+K_{V | a=\SI{30}{\cm}} & = & \SI{-39(2)}{\per\metre} \qquad \qquad & K_{V | a=\SI{60}{\cm}} & = & \SI{-19.7(3)}{\per\metre} \\
+K_{P | a=\SI{30}{\cm}} & = &\SI{-58(3)}{\per\metre} \qquad \qquad & K_{P | a=\SI{60}{\cm}} & = & \SI{-48(2)}{\per\metre} \\
+\end{array}
+\end{equation}
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{c|cc|cc||cc|cc}
+& \multicolumn{4}{c||}{$a = \SI{30}{\cm}$} & \multicolumn{4}{c}{$a = \SI{60}{\cm}$} \\
+& \multicolumn{2}{c|}{vypuklá} & \multicolumn{2}{c||}{ploská} & \multicolumn{2}{c|}{vypuklá} & \multicolumn{2}{c}{ploská} \\
+$s$ (\si{\mm}) & $\apr$ (\si{\cm}) & $v$ (\si{\cm}) & $\apr$ (\si{\cm}) & $v$ (\si{\cm}) & $\apr$ (\si{\cm}) & $v$ (\si{\cm}) & $\apr$ (\si{\cm}) & $v$ (\si{\cm}) \\ \hline
+0,0 & 22,4 & --- & 23,0 & --- & 18,7 & --- & 19,8 & --- \\ 
+7,5 & 22,2 & -0,2 & 22,9 & -0,1 & 18,6 & -0,1 & 19,6 & -0,2 \\ 
+12,5 & 21,7 & -0,7 & 22,3 & -0,7 & 18,4 & -0,3 & 19,1 & -0,7 \\ 
+17,5 & 21,3 & -1,1 & 21,2 & -1,8 & 18,1 & -0,6 & 18,4 & -1,4 \\ 
+22,5 & 20,4 & -2,0 & 20,0 & -3,0 & 17,7 & -1,0 & 17,3 & -2,5 \\ 
+\end{tabular}
+\caption{Kulová vada tenké čočky. Vypuklá/ploská označuje, která strana čočky byla směrem k předmětu.}
+\label{t:kulvada}
+\end{tabulka}
+
+\begin{graph}[htbp] 
+\centering
+\input{vada.tex}
+\caption{Kulová vada tenké čočky. Vypuklá/ploská označuje, která strana čočky byla směrem k předmětu.}
+\label{g:vada}
+\end{graph}
+
+
+
+
+Pomocí goniometru jsme změřili vzdálenost hlavních rovin. 
+Polohy obou uzlových bodů jsme změřili víckrát, z hodnot jsme určili standardní odchylku a tu přenesli součtem čtverců do hodnoty $\delta$. Jednotlivé hodnoty jsou uvedeny v tabulce \ref{t:goniometr}. 
+Celkové výsledky jsou
+\begin{equation*}
+\delta_{tenka} = \SI{12.9(3)}{\mm} \qquad \qquad \delta_{tlusta} = \SI{3.9(3)}{\mm}
+\end{equation*}
+
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{c|cccc}
+\multicolumn{5}{c}{Tenká čočka} \\
+vypuklá & \SI{12.3}{\mm} & \SI{12.1}{\mm} & \SI{12.1}{\mm} & \\
+ploská & \SI{16.0}{\mm} & \SI{15.7}{\mm} & \SI{16.3}{\mm} & \SI{16.2}{\mm} \\
+
+\hline \hline
+\multicolumn{5}{c}{Tlustá čočka} \\
+vypuklá & \SI{13.7}{\mm} & \SI{13.2}{\mm} & \SI{13.3}{\mm} & \SI{13.3}{\mm} \\
+ploská & \SI{26.1}{\mm} & \SI{26.2}{\mm} & \SI{26.5}{\mm} & \\
+\end{tabular}
+\caption{Měření vzdálenosti hlavních rovin pomocí goniometru. První sloupec označuje, která strana čočky byla směrem k okuláru, ostatní sloupce jsou poloha uzlového bodu na mikrometru.}
+\label{t:goniometr}
+\end{tabulka}
+
+
+
+Na fokometru jsme změřili optickou mohutnost tenké čočky. Vypuklou stranou čočky k okuláru jsme změřili \SI{10.25(25)}{\per\metre}, ploskou stranou \SI{9.75(25)}{\per\metre}.
+
+
+Tloušťka tlusté čočky byla \SI{38}{\mm}. Dosazením do \eqref{e:tlusta} jsme určili index lomu skla $n_{tlusta}=\num{1.51(3)}$.

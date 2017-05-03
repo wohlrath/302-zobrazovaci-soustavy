@@ -17,6 +17,7 @@
 \usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage{url}
+\usepackage{multirow}
 
 \usepackage{siunitx}
 \sisetup{locale = DE}  %, separate-uncertainty = true    kdybych chtel +/-
@@ -35,23 +36,27 @@
 \author{Vladislav Wohlrath}
 
 \bibliography{source}
+\newcommand{\apr}{a^\prime}
+\newcommand{\Ypr}{Y^\prime}
 
 \begin{document}
 
 \begin{titlepage}
-\includepdf[pages={1}]{./graficos/302-tit.pdf}
+\includepdf[pages={1}]{./graficos/titlelist.pdf}
 \end{titlepage}
 
 \section*{Pracovní úkoly}
 \begin{enumerate}
-\item ÚKOLY
+\item Změřte ohniskovou vzdálenost tenké ploskovypuklé (plankonvexní) čočky jednak Besselovou metodou, jednak metodou dvojího zvětšení.
+\item Změřte kulovou vadu vyšetřované ploskovypuklé čočky v obou směrech pro dvě vzdálenosti předmětu $a = \SI{30}{\cm}$, $a = \SI{60}{\cm}$. Získané výsledky zpracujte do jednoho grafu a diskutujte velikost kulové vady v jednotlivých případech.
+\item Užitím goniometru určete vzdálenost hlavních rovin čočky měřené v bodě 1 a tlusté ploskovypuklé čočky.
+\item Na fokometru změřte optickou mohutnost čočky měřené v bodě 1 a výsledek srovnejte s výsledky měření ohniskové vzdálenosti.
+\item Na základě výsledků získaných v bodech 1. a 3. diskutujte, která z uvedených metod měření ohniskové vzdálenosti dle bodu 1. je v uvedeném uspořádání přesnější. Porovnejte relativní chyby měření. Odhadněte systematickou chybu, které se dopouštíme při měření ohniskové vzdálenosti Besselovou metodou.
+\item Ze známé tloušťky tlusté ploskovypuklé čočky a změřené vzdálenosti hlavních rovin určete index lomu skla.
 \end{enumerate}
 
 %Teoretická část
 \input{teorie.tex}
-
-%Podmínky a měřící přístroje
-\input{podminky.tex}
 
 %Výsledky měření
 \input{vysledky.tex}
